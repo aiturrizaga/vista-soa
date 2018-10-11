@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="assets/img/logo-fav.png">
+    <title>SOA VG</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/lib/perfect-scrollbar/css/perfect-scrollbar.css" />
+    <link rel="stylesheet" type="text/css" href="assets/lib/material-design-icons/css/material-design-iconic-font.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-float-label.min.css" />
+    <link rel="stylesheet" href="assets/css/app.css" type="text/css" />
+</head>
+
+<body>
+    <div class="be-wrapper be-color-header be-offcanvas-menu be-fixed-sidebar be-collapsible-sidebar">
+        <nav class="navbar navbar-expand fixed-top be-top-header">
+            <div class="container-fluid">
+                <div class="be-navbar-header">
+                    <a class="nav-link be-toggle-left-sidebar" style="cursor: pointer;">
+                        <span class="icon mdi mdi-menu"></span>
+                    </a>
+                    <a class="navbar-brand" href="#" style="color: #fff;">
+                        <h3>SOA</h3>
+                    </a>
+                </div>
+                <div class="be-right-navbar">
+                    <ul class="nav navbar-nav float-right be-user-nav">
+                        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"
+                                role="button" aria-expanded="false"><img src="assets/img/avatar.png" alt="Avatar"><span
+                                    class="user-name">Jhon Doe</span></a>
+                            <div class="dropdown-menu" role="menu">
+                                <div class="user-info">
+                                    <div class="user-name">Jhon Doe</div>
+                                    <div class="user-position online">Disponible</div>
+                                </div><a class="dropdown-item" href="pages-profile.html"><span class="icon mdi mdi-face"></span>Perfil</a><a
+                                    class="dropdown-item" href="#"><span class="icon mdi mdi-settings"></span>Ajustes</a><a
+                                    class="dropdown-item" href="pages-login.html"><span class="icon mdi mdi-power"></span>Cerrar
+                                    sesión</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="page-title"><span>Ficha integral</span></div>
+                    <ul class="nav navbar-nav float-right be-icons-nav">
+                        <li class="nav-item dropdown"><a class="nav-link be-toggle-right-sidebar" href="#" role="button"
+                                aria-expanded="false"><span class="icon mdi mdi-settings"></span></a></li>
+                        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"
+                                role="button" aria-expanded="false"><span class="icon mdi mdi-notifications"></span><span
+                                    class="indicator"></span></a>
+                            <ul class="dropdown-menu be-notifications">
+                                <li>
+                                    <div class="title">Notificaciones<span class="badge badge-pill">3</span></div>
+                                    <div class="list">
+                                        <div class="be-scroller-notifications">
+                                            <div class="content">
+                                                <ul>
+                                                    <li class="notification notification-unread"><a href="#">
+                                                            <div class="image"><img src="assets/img/avatar2.png" alt="Avatar"></div>
+                                                            <div class="notification-info">
+                                                                <div class="text"><span class="user-name">Jessica
+                                                                        Caruso</span> accepted your
+                                                                    invitation to join the team.</div><span class="date">2
+                                                                    min ago</span>
+                                                            </div>
+                                                        </a></li>
+                                                    <li class="notification"><a href="#">
+                                                            <div class="image"><img src="assets/img/avatar3.png" alt="Avatar"></div>
+                                                            <div class="notification-info">
+                                                                <div class="text"><span class="user-name">Joel King</span>
+                                                                    is now following you</div><span class="date">2 days
+                                                                    ago</span>
+                                                            </div>
+                                                        </a></li>
+                                                    <li class="notification"><a href="#">
+                                                            <div class="image"><img src="assets/img/avatar4.png" alt="Avatar"></div>
+                                                            <div class="notification-info">
+                                                                <div class="text"><span class="user-name">John Doe</span>
+                                                                    is watching your main
+                                                                    repository</div><span class="date">2 days ago</span>
+                                                            </div>
+                                                        </a></li>
+                                                    <li class="notification"><a href="#">
+                                                            <div class="image"><img src="assets/img/avatar5.png" alt="Avatar"></div>
+                                                            <div class="notification-info"><span class="text"><span
+                                                                        class="user-name">Emily Carter</span>
+                                                                    is now following you</span><span class="date">5
+                                                                    days ago</span></div>
+                                                        </a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="footer"> <a href="#">View all notifications</a></div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"
+                                role="button" aria-expanded="false"><span class="icon mdi mdi-apps"></span></a>
+                            <ul class="dropdown-menu be-connections">
+                                <li>
+                                    <div class="list">
+                                        <div class="content">
+                                            <div class="row">
+                                                <div class="col"><a class="connection-item" href="#"><img src="assets/img/github.png"
+                                                            alt="Github"><span>GitHub</span></a></div>
+                                                <div class="col"><a class="connection-item" href="#"><img src="assets/img/bitbucket.png"
+                                                            alt="Bitbucket"><span>Bitbucket</span></a></div>
+                                                <div class="col"><a class="connection-item" href="#"><img src="assets/img/slack.png"
+                                                            alt="Slack"><span>Slack</span></a></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col"><a class="connection-item" href="#"><img src="assets/img/dribbble.png"
+                                                            alt="Dribbble"><span>Dribbble</span></a></div>
+                                                <div class="col"><a class="connection-item" href="#"><img src="assets/img/mail_chimp.png"
+                                                            alt="Mail Chimp"><span>Mail
+                                                            Chimp</span></a></div>
+                                                <div class="col"><a class="connection-item" href="#"><img src="assets/img/dropbox.png"
+                                                            alt="Dropbox"><span>Dropbox</span></a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="footer"> <a href="#">More</a></div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="be-left-sidebar">
+            <div class="left-sidebar-wrapper"><a class="left-sidebar-toggle" href="#">Blank Page</a>
+                <div class="left-sidebar-spacer">
+                    <div class="left-sidebar-scroll">
+                        <div class="left-sidebar-content">
+                            <ul class="sidebar-elements">
+                                <li class="divider">Menu</li>
+                                <li><a href="index.html"><i class="icon mdi mdi-home"></i><span>Dashboard</span></a>
+                                </li>
+                                <li><a href="infractor.html"><i class="icon mdi mdi-mood-bad"></i><span>Infractores</span></a>
+                                </li>
+                                <li><a href="instituciones.html"><i class="icon mdi mdi-city-alt"></i><span>Instituciones</span></a>
+                                </li>
+                                <li class="parent"><a href="#"><i class="icon mdi mdi-collection-text"></i><span>Documentos</span></a>
+                                    <ul class="sub-menu">
+                                        <li class="active"><a href="ficha-integral.html">Ficha integral</a>
+                                        </li>
+                                        <li><a href="#">Plan individual</a>
+                                        </li>
+                                        <li><a href="#">Savry</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="be-content">
+            <div class="main-content container-fluid">
+                <div class="row">
+                    <div class="col-12 col-lg-12">
+                        <div class="tab-container">
+                            <ul class="nav nav-tabs nav-tabs-classic" role="tablist">
+                                <li class="nav-item"><a class="nav-link active" href="#classic_home" data-toggle="tab"
+                                        role="tab">Trabajador(a) Social</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#classic_profile" data-toggle="tab" role="tab">Promotor(a)
+                                        Social</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#classic_messages" data-toggle="tab"
+                                        role="tab">Psicólogo(a)</a></li>
+                            </ul>
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="classic_home" role="tabpanel">
+                                    <div class="card">
+                                        <div class="card-header card-header-divider">
+                                            Trabajador(a) Social
+                                            <span class="card-subtitle">Seleccione al adolescente infractor y complete
+                                                el
+                                                formulario</span>
+                                        </div>
+                                        <div class="card-body">
+                                            <form>
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <div class="form-group">
+                                                            <label for="txtInfractor">Nombre del infractor</label>
+                                                            <input class="form-control" id="txtInfractor" type="text"
+                                                                placeholder="Ingrese el nombre del infractor">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="form-group">
+                                                            <label for="txtDataPadre">Nombre del padre</label>
+                                                            <input class="form-control" id="txtDataPadre" type="text"
+                                                                placeholder="Nombre del padre">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="form-group">
+                                                            <label for="txtDataMadre">Nombre de la madre</label>
+                                                            <input class="form-control" id="txtDataMadre" type="text"
+                                                                placeholder="Nombre de la madre">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="form-group">
+                                                            <label for="txtDataPareja">Nombre de la pareja</label>
+                                                            <input class="form-control" id="txtDataPareja" type="text"
+                                                                placeholder="Nombre de la pareja">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="form-group">
+                                                            <label for="txtDataHijos">Nombre de los hijos</label>
+                                                            <input class="form-control" id="txtDataHijos" type="text"
+                                                                placeholder="Nombre de los hijos">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="form-group">
+                                                            <label for="txtCompFam">Composición familiar</label>
+                                                            <input class="form-control" id="txtCompFam" type="text"
+                                                                placeholder="Composición familiar">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="form-group">
+                                                            <label for="txtGenograma">Genograma</label>
+                                                            <input class="form-control" id="txtGenograma" type="text"
+                                                                placeholder="Genograma">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="form-group">
+                                                            <label for="txtSitViv">Situación de la vivienda</label>
+                                                            <input class="form-control" id="txtSitViv" type="text"
+                                                                placeholder="Situación de la vivienda">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="form-group">
+                                                            <label for="txtCarEntRes">Características del entorno de
+                                                                residencia</label>
+                                                            <input class="form-control" id="txtCarEntRes" type="text"
+                                                                placeholder="Características del entorno de residencia">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="form-group">
+                                                            <label for="txtRelGrupIg">Relación con el grupo de iguales</label>
+                                                            <input class="form-control" id="txtRelGrupIg" type="text"
+                                                                placeholder="Relación con el grupo de iguales">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="form-group">
+                                                            <label for="txtRelGrupIgJus">Relación del grupo de iguales
+                                                                con la
+                                                                justicia</label>
+                                                            <input class="form-control" id="txtRelGrupIgJus" type="text"
+                                                                placeholder="Relación del grupo de iguales con la justicia">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="form-group">
+                                                            <label for="txtImpAcPs">Implicación en actividades
+                                                                pro-sociales</label>
+                                                            <input class="form-control" id="txtImpAcPs" type="text"
+                                                                placeholder="Implicación en actividades pro-sociales">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="form-group">
+                                                            <label for="txtImpAcPs">Implicación en actividades
+                                                                pro-sociales</label>
+                                                            <input class="form-control" id="txtImpAcPs" type="text"
+                                                                placeholder="Implicación en actividades pro-sociales">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="form-group">
+                                                            <label for="txtSopPsA">Soporte personal/social de otros
+                                                                adultos</label>
+                                                            <input class="form-control" id="txtSopPsA" type="text"
+                                                                placeholder="Soporte personal/social de otros adultos">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="form-group">
+                                                            <label for="txtSopSoc">Soporte social</label>
+                                                            <input class="form-control" id="txtSopSoc" type="text"
+                                                                placeholder="Soporte social">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="form-group">
+                                                            <label for="txtVinAdPs">Vinculación con adultos
+                                                                pro-sociales</label>
+                                                            <input class="form-control" id="txtVinAdPs" type="text"
+                                                                placeholder="Vinculación con adultos pro-sociales">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-sm-12">
+                                                        <p class="text-right">
+                                                            <button class="btn btn-space btn-primary">Enviar</button>
+                                                            <button class="btn btn-space btn-secondary">Cancelar</button>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="classic_profile" role="tabpanel">
+                                    <div class="card">
+                                        <div class="card-header card-header-divider">
+                                            Promotor(a) Social
+                                            <span class="card-subtitle">Seleccione al adolescente infractor y complete
+                                                el
+                                                formulario</span>
+                                        </div>
+                                        <div class="card-body">
+                                            <form>
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <div class="form-group">
+                                                            <label for="txtInfractor">Nombre del infractor</label>
+                                                            <input class="form-control" id="txtInfractor" type="text"
+                                                                placeholder="Nombre del infractor">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="form-group">
+                                                            <label for="txtGrInt">Grado de intrusión</label>
+                                                            <input class="form-control" id="txtGrInt" type="text"
+                                                                placeholder="Grado de intrusión">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="form-group">
+                                                            <label for="txtModEduc">Modalidad educativa</label>
+                                                            <input class="form-control" id="txtModEduc" type="text"
+                                                                placeholder="Modalidad educativa">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="form-group">
+                                                            <label for="txtRendEduc">Rendimiento educativo</label>
+                                                            <input class="form-control" id="txtRendEduc" type="text"
+                                                                placeholder="Rendimiento educativo">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="form-group">
+                                                            <label for="txtMotEduc">Motivación educativo</label>
+                                                            <input class="form-control" id="txtMotEduc" type="text"
+                                                                placeholder="Motivación educativo">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="form-group">
+                                                            <label for="txtRecApEduc">Recursos de apoyo</label>
+                                                            <input class="form-control" id="txtRecApEduc" type="text"
+                                                                placeholder="Recursos de apoyo">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="form-group">
+                                                            <label for="txtRelIntEduc">Relaciones interpersonales en el
+                                                                ámbito
+                                                                educativo</label>
+                                                            <input class="form-control" id="txtRelIntEduc" type="text"
+                                                                placeholder="Relaciones interpersonales en el ámbito educativo">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="form-group">
+                                                            <label for="txtExpLab">Experiencia laboral</label>
+                                                            <input class="form-control" id="txtExpLab" type="text"
+                                                                placeholder="Experiencia laboral">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="form-group">
+                                                            <label for="txtSitLabAct">Situación laboral actual</label>
+                                                            <input class="form-control" id="txtSitLabAct" type="text"
+                                                                placeholder="Situación laboral actual">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="form-group">
+                                                            <label for="txtModLab">Modalidad laboral</label>
+                                                            <input class="form-control" id="txtModLab" type="text"
+                                                                placeholder="Modalidad laboral">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="form-group">
+                                                            <label for="txtRendLab">Rendimiento laboral</label>
+                                                            <input class="form-control" id="txtRendLab" type="text"
+                                                                placeholder="Rendimiento laboral">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="form-group">
+                                                            <label for="txtMotLab">Motivación laboral</label>
+                                                            <input class="form-control" id="txtMotLab" type="text"
+                                                                placeholder="Motivación laboral">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="form-group">
+                                                            <label for="txtRecApLab">Recursos de apoyo laborales</label>
+                                                            <input class="form-control" id="txtRecApLab" type="text"
+                                                                placeholder="Recursos de apoyo laborales">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="form-group">
+                                                            <label for="txtRelIntLab">Relaciones interpersonales en el
+                                                                ámbito
+                                                                laboral</label>
+                                                            <input class="form-control" id="txtRelIntLab" type="text"
+                                                                placeholder="Relaciones interpersonales en el ámbito laboral">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="form-group">
+                                                            <label for="txtUseTimeFree">Uso del tiempo libre</label>
+                                                            <input class="form-control" id="txtUseTimeFree" type="text"
+                                                                placeholder="Uso del tiempo libre">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-sm-12">
+                                                        <p class="text-right">
+                                                            <button class="btn btn-space btn-primary">Enviar</button>
+                                                            <button class="btn btn-space btn-secondary">Cancelar</button>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="classic_messages" role="tabpanel">
+                                    <div class="card">
+                                        <div class="card-header card-header-divider">
+                                            Psicólogo(a)
+                                            <span class="card-subtitle">Seleccione al adolescente infractor y complete
+                                                el
+                                                formulario</span>
+                                        </div>
+                                        <div class="card-body">
+                                            <form>
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <div class="form-group">
+                                                            <label for="txtInfractor">Nombre del infractor</label>
+                                                            <input class="form-control" id="txtInfractor" type="text"
+                                                                placeholder="Nombre del infractor">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="form-group">
+                                                            <label for="txtImp">Impulsividad</label>
+                                                            <input class="form-control" id="txtImp" type="text"
+                                                                placeholder="Impulsividad">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="form-group">
+                                                            <label for="txtMcIra">Manejo y control de la ira</label>
+                                                            <input class="form-control" id="txtMcIra" type="text"
+                                                                placeholder="Manejo y control de la ira">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="form-group">
+                                                            <label for="txtSeCa">Situaciones de estrés y capacidad de
+                                                                afrontarlo</label>
+                                                            <input class="form-control" id="txtSeCa" type="text"
+                                                                placeholder="Situaciones de estrés y capacidad de afrontarlo">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="form-group">
+                                                            <label for="txtEmp">Empatía</label>
+                                                            <input class="form-control" id="txtEmp" type="text"
+                                                                placeholder="Empatía">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="form-group">
+                                                            <label for="txtPerRp">Perseverancia como rasgo de
+                                                                personalidad</label>
+                                                            <input class="form-control" id="txtPerRp" type="text"
+                                                                placeholder="Perseverancia como rasgo de personalidad">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="form-group">
+                                                            <label for="txtDcPs">Desarrollo y compromiso psico-sexual</label>
+                                                            <input class="form-control" id="txtDcPs" type="text"
+                                                                placeholder="Desarrollo y compromiso piso-sexual">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="form-group">
+                                                            <label for="txtCal">Conductos de auto lesiva</label>
+                                                            <input class="form-control" id="txtCal" type="text"
+                                                                placeholder="Conductos de auto lesiva">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="form-group">
+                                                            <label for="txtConSusTox">Consumo de sustancias toxicas</label>
+                                                            <input class="form-control" id="txtConSusTox" type="text"
+                                                                placeholder="Consumo de sustancias toxicas">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="form-group">
+                                                            <label for="txtCapCon">Capacidad de
+                                                                concentración/hiperactividad</label>
+                                                            <input class="form-control" id="txtCapCon" type="text"
+                                                                placeholder="Capacidad de concentración/hiperactividad">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="form-group">
+                                                            <label for="txtVarCog">Variables cognitivas</label>
+                                                            <input class="form-control" id="txtVarCog" type="text"
+                                                                placeholder="Variables cognitivas">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="form-group">
+                                                            <label for="txtAdapCen">Adaptación al centro</label>
+                                                            <input class="form-control" id="txtAdapCen" type="text"
+                                                                placeholder="Adaptación al centro">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-sm-12">
+                                                        <p class="text-right">
+                                                            <button class="btn btn-space btn-primary">Enviar</button>
+                                                            <button class="btn btn-space btn-secondary">Cancelar</button>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="be-right-sidebar">
+            <div class="sb-content">
+                <div class="tab-navigation">
+                    <ul class="nav nav-tabs nav-justified" role="tablist">
+                        <li class="nav-item" role="presentation"><a class="nav-link active" href="#tab1" aria-controls="tab1"
+                                role="tab" data-toggle="tab">Chat</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="#tab2" aria-controls="tab2"
+                                role="tab" data-toggle="tab">Todo</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="#tab3" aria-controls="tab3"
+                                role="tab" data-toggle="tab">Settings</a></li>
+                    </ul>
+                </div>
+                <div class="tab-panel">
+                    <div class="tab-content">
+                        <div class="tab-pane tab-chat active" id="tab1" role="tabpanel">
+                            <div class="chat-contacts">
+                                <div class="chat-sections">
+                                    <div class="be-scroller-chat">
+                                        <div class="content">
+                                            <h2>Recent</h2>
+                                            <div class="contact-list contact-list-recent">
+                                                <div class="user"><a href="#"><img src="assets/img/avatar1.png" alt="Avatar">
+                                                        <div class="user-data"><span class="status away"></span><span
+                                                                class="name">Claire Sassu</span><span class="message">Can
+                                                                you share the...</span></div>
+                                                    </a></div>
+                                                <div class="user"><a href="#"><img src="assets/img/avatar2.png" alt="Avatar">
+                                                        <div class="user-data"><span class="status"></span><span class="name">Maggie
+                                                                jackson</span><span class="message">I confirmed the
+                                                                info.</span></div>
+                                                    </a></div>
+                                                <div class="user"><a href="#"><img src="assets/img/avatar3.png" alt="Avatar">
+                                                        <div class="user-data"><span class="status offline"></span><span
+                                                                class="name">Joel King </span><span class="message">Ready
+                                                                for the meeti...</span></div>
+                                                    </a></div>
+                                            </div>
+                                            <h2>Contacts</h2>
+                                            <div class="contact-list">
+                                                <div class="user"><a href="#"><img src="assets/img/avatar4.png" alt="Avatar">
+                                                        <div class="user-data2"><span class="status"></span><span class="name">Mike
+                                                                Bolthort</span></div>
+                                                    </a></div>
+                                                <div class="user"><a href="#"><img src="assets/img/avatar5.png" alt="Avatar">
+                                                        <div class="user-data2"><span class="status"></span><span class="name">Maggie
+                                                                jackson</span></div>
+                                                    </a></div>
+                                                <div class="user"><a href="#"><img src="assets/img/avatar6.png" alt="Avatar">
+                                                        <div class="user-data2"><span class="status offline"></span><span
+                                                                class="name">Jhon Voltemar</span></div>
+                                                    </a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bottom-input">
+                                    <input type="text" placeholder="Search..." name="q"><span class="mdi mdi-search"></span>
+                                </div>
+                            </div>
+                            <div class="chat-window">
+                                <div class="title">
+                                    <div class="user"><img src="assets/img/avatar2.png" alt="Avatar">
+                                        <h2>Maggie jackson</h2><span>Active 1h ago</span>
+                                    </div><span class="icon return mdi mdi-chevron-left"></span>
+                                </div>
+                                <div class="chat-messages">
+                                    <div class="be-scroller-messages">
+                                        <div class="content">
+                                            <ul>
+                                                <li class="friend">
+                                                    <div class="msg">Hello</div>
+                                                </li>
+                                                <li class="self">
+                                                    <div class="msg">Hi, how are you?</div>
+                                                </li>
+                                                <li class="friend">
+                                                    <div class="msg">Good, I'll need support with my pc</div>
+                                                </li>
+                                                <li class="self">
+                                                    <div class="msg">Sure, just tell me what is going on with your
+                                                        computer?</div>
+                                                </li>
+                                                <li class="friend">
+                                                    <div class="msg">I don't know it just turns off suddenly</div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="chat-input">
+                                    <div class="input-wrapper"><span class="photo mdi mdi-camera"></span>
+                                        <input type="text" placeholder="Message..." name="q" autocomplete="off"><span
+                                            class="send-msg mdi mdi-mail-send"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane tab-todo" id="tab2" role="tabpanel">
+                            <div class="todo-container">
+                                <div class="todo-wrapper">
+                                    <div class="be-scroller-todo">
+                                        <div class="todo-content"><span class="category-title">Today</span>
+                                            <ul class="todo-list">
+                                                <li>
+                                                    <label class="custom-checkbox custom-control custom-control-sm"><span
+                                                            class="delete mdi mdi-delete"></span>
+                                                        <input class="custom-control-input" type="checkbox" checked=""><span
+                                                            class="custom-control-label">Initialize the project</span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label class="custom-checkbox custom-control custom-control-sm"><span
+                                                            class="delete mdi mdi-delete"></span>
+                                                        <input class="custom-control-input" type="checkbox"><span class="custom-control-label">Create
+                                                            the main structure </span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label class="custom-checkbox custom-control custom-control-sm"><span
+                                                            class="delete mdi mdi-delete"></span>
+                                                        <input class="custom-control-input" type="checkbox"><span class="custom-control-label">Updates
+                                                            changes to GitHub </span>
+                                                    </label>
+                                                </li>
+                                            </ul><span class="category-title">Tomorrow</span>
+                                            <ul class="todo-list">
+                                                <li>
+                                                    <label class="custom-checkbox custom-control custom-control-sm"><span
+                                                            class="delete mdi mdi-delete"></span>
+                                                        <input class="custom-control-input" type="checkbox"><span class="custom-control-label">Initialize
+                                                            the project </span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label class="custom-checkbox custom-control custom-control-sm"><span
+                                                            class="delete mdi mdi-delete"></span>
+                                                        <input class="custom-control-input" type="checkbox"><span class="custom-control-label">Create
+                                                            the main structure </span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label class="custom-checkbox custom-control custom-control-sm"><span
+                                                            class="delete mdi mdi-delete"></span>
+                                                        <input class="custom-control-input" type="checkbox"><span class="custom-control-label">Updates
+                                                            changes to GitHub </span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label class="custom-checkbox custom-control custom-control-sm"><span
+                                                            class="delete mdi mdi-delete"></span>
+                                                        <input class="custom-control-input" type="checkbox"><span class="custom-control-label"
+                                                            title="This task is too long to be displayed in a normal space!">This
+                                                            task is too long to be displayed in a normal space! </span>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bottom-input">
+                                    <input type="text" placeholder="Create new task..." name="q"><span class="mdi mdi-plus"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane tab-settings" id="tab3" role="tabpanel">
+                            <div class="settings-wrapper">
+                                <div class="be-scroller-settings"><span class="category-title">General</span>
+                                    <ul class="settings-list">
+                                        <li>
+                                            <div class="switch-button switch-button-sm">
+                                                <input type="checkbox" checked="" name="st1" id="st1"><span>
+                                                    <label for="st1"></label></span>
+                                            </div><span class="name">Available</span>
+                                        </li>
+                                        <li>
+                                            <div class="switch-button switch-button-sm">
+                                                <input type="checkbox" checked="" name="st2" id="st2"><span>
+                                                    <label for="st2"></label></span>
+                                            </div><span class="name">Enable notifications</span>
+                                        </li>
+                                        <li>
+                                            <div class="switch-button switch-button-sm">
+                                                <input type="checkbox" checked="" name="st3" id="st3"><span>
+                                                    <label for="st3"></label></span>
+                                            </div><span class="name">Login with Facebook</span>
+                                        </li>
+                                    </ul><span class="category-title">Notifications</span>
+                                    <ul class="settings-list">
+                                        <li>
+                                            <div class="switch-button switch-button-sm">
+                                                <input type="checkbox" name="st4" id="st4"><span>
+                                                    <label for="st4"></label></span>
+                                            </div><span class="name">Email notifications</span>
+                                        </li>
+                                        <li>
+                                            <div class="switch-button switch-button-sm">
+                                                <input type="checkbox" checked="" name="st5" id="st5"><span>
+                                                    <label for="st5"></label></span>
+                                            </div><span class="name">Project updates</span>
+                                        </li>
+                                        <li>
+                                            <div class="switch-button switch-button-sm">
+                                                <input type="checkbox" checked="" name="st6" id="st6"><span>
+                                                    <label for="st6"></label></span>
+                                            </div><span class="name">New comments</span>
+                                        </li>
+                                        <li>
+                                            <div class="switch-button switch-button-sm">
+                                                <input type="checkbox" name="st7" id="st7"><span>
+                                                    <label for="st7"></label></span>
+                                            </div><span class="name">Chat messages</span>
+                                        </li>
+                                    </ul><span class="category-title">Workflow</span>
+                                    <ul class="settings-list">
+                                        <li>
+                                            <div class="switch-button switch-button-sm">
+                                                <input type="checkbox" name="st8" id="st8"><span>
+                                                    <label for="st8"></label></span>
+                                            </div><span class="name">Deploy on commit</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <script src="assets/lib/jquery/jquery.min.js" type="text/javascript"></script>
+    <script src="assets/lib/perfect-scrollbar/js/perfect-scrollbar.min.js" type="text/javascript"></script>
+    <script src="assets/lib/bootstrap/dist/js/bootstrap.bundle.min.js" type="text/javascript"></script>
+    <script src="assets/js/app.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            //-initialize the javascript
+            App.init();
+        });
+    </script>
+</body>
+
+</html>
